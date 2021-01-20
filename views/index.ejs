@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <title>ホーム画面</title>
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <meta name="viewport" content="width=1214, user-scalable=yes">
+    <link rel="stylesheet" href="css/slick.css" type="text/css">
+    <link rel="stylesheet" href="css/slick-theme.css" type="text/css">
+    <link rel="stylesheet" href="css/template.css" type="text/css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script type="text/javascript" src="js/slick.min.js"></script>
+    <script>
+        // slick スライドショー
+        $(function () {
+            $('.slide_img').slick({
+                arrows: false,
+                autoplay: true,
+                infinite: true,
+                dots: true,
+                slidesToShow: 3,
+                centerMode: true,
+                centerPadding: '0px',
+                variableWidth: true,
+                responsive: true,
+                autoplaySpeed: 4000,
+                speed: 400,
+                adaptiveHeight: true,
+                pauseOnHover: false,
+                pauseOnFocus: false,
+            });
+        });
+    </script>
+</head>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+
+<body>
+
+    <!--ヘッダー-->
+    <header class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <img src="img/13.png" alt="" class="rounded-circle" style="width: 50px; height: 50px;" />
+        <a href="index.html" class="mr-auto navbar-brand nav-link">
+            <img src="img/Askisst.png" alt="" />
+        </a>
+        <div class="pull-right">
+            <a href="signup.html" class="navbar-brand nav-link"> signup </a>
+            <a href="signin.html" class="navbar-brand nav-link"> signin </a>
+        </div>
+    </header>
+
+    <!--スライドショー-->
+    <div id="contents" class="slide">
+        <div class="jpg bg-light">
+            <div class="slide_img">
+                <img src="img/h-1.jpg" alt="" style="width: 1100px" />
+                <img src="img/h-2.jpg" alt="" style="width: 1100px" />
+                <img src="img/h-3.jpg" alt="" style="width: 1100px" />
+                <img src="img/h-4.jpg" alt="" style="width: 1100px" />
+                <img src="img/h-5.jpg" alt="" style="width: 1100px" />
+            </div>
+        </div>
+    </div>
+
+    <!-- コンテンツ -->
+    <main class="">
+        <!--エリア選択ボタン-->
+        <select name="prefecture" id="pref" class="m-5 p-2 btn btn-info">
+            <option value="" selected>エリアを選択</option>
+            <optgroup label="北海道地方" class="btn-warning">
+                <option value="北海道" class="text-white">北海道</option>
+            </optgroup>
+            <optgroup label="東北地方" class="btn-warning">
+                <option value="青森県" class="text-white">青森県</option>
+                <option value="岩手県" class="text-white">岩手県</option>
+                <option value="宮城県" class="text-white">宮城県</option>
+                <option value="秋田県" class="text-white">秋田県</option>
+                <option value="山形県" class="text-white">山形県</option>
+                <option value="福島県" class="text-white">福島県</option>
+            </optgroup>
+            <optgroup label="関東地方" class="btn-warning">
+                <option value="茨城県" class="text-white">茨城県</option>
+                <option value="栃木県" class="text-white">栃木県</option>
+                <option value="群馬県" class="text-white">群馬県</option>
+                <option value="埼玉県" class="text-white">埼玉県</option>
+                <option value="千葉県" class="text-white">千葉県</option>
+                <option value="東京都" class="text-white">東京都</option>
+                <option value="神奈川県" class="text-white">神奈川県</option>
+            </optgroup>
+            <optgroup label="中部地方" class="btn-warning">
+                <option value="新潟県" class="text-white">新潟県</option>
+                <option value="富山県" class="text-white">富山県</option>
+                <option value="石川県" class="text-white">石川県</option>
+                <option value="福井県" class="text-white">福井県</option>
+                <option value="山梨県" class="text-white">山梨県</option>
+                <option value="長野県" class="text-white">長野県</option>
+                <option value="岐阜県" class="text-white">岐阜県</option>
+                <option value="静岡県" class="text-white">静岡県</option>
+                <option value="愛知県" class="text-white">愛知県</option>
+            </optgroup>
+            <optgroup label="近畿地方" class="btn-warning">
+                <option value="三重県" class="text-white">三重県</option>
+                <option value="滋賀県" class="text-white">滋賀県</option>
+                <option value="京都府" class="text-white">京都府</option>
+                <option value="大阪府" class="text-white">大阪府</option>
+                <option value="兵庫県" class="text-white">兵庫県</option>
+                <option value="奈良県" class="text-white">奈良県</option>
+                <option value="和歌山県" class="text-white">和歌山県</option>
+            </optgroup>
+            <optgroup label="中国地方" class="btn-warning">
+                <option value="鳥取県" class="text-white">鳥取県</option>
+                <option value="島根県" class="text-white">島根県</option>
+                <option value="岡山県" class="text-white">岡山県</option>
+                <option value="広島県" class="text-white">広島県</option>
+                <option value="山口県" class="text-white">山口県</option>
+            </optgroup>
+            <optgroup label="四国地方" class="btn-warning">
+                <option value="徳島県" class="text-white">徳島県</option>
+                <option value="香川県" class="text-white">香川県</option>
+                <option value="愛媛県" class="text-white">愛媛県</option>
+                <option value="高知県" class="text-white">高知県</option>
+            </optgroup>
+            <optgroup label="九州・沖縄地方" class="btn-warning">
+                <option value="福岡県" class="text-white">福岡県</option>
+                <option value="佐賀県" class="text-white">佐賀県</option>
+                <option value="長崎県" class="text-white">長崎県</option>
+                <option value="熊本県" class="text-white">熊本県</option>
+                <option value="大分県" class="text-white">大分県</option>
+                <option value="宮崎県" class="text-white">宮崎県</option>
+                <option value="鹿児島県" class="text-white">鹿児島県</option>
+                <option value="沖縄県" class="text-white">沖縄県</option>
+            </optgroup>
+        </select>
+        <select name="job" id="job" class="m-3 p-2 btn btn-info">
+            <option value="" selected>職種を選択</option>
+        </select>
+        <input type="submit" class="m-5 p-2 btn btn-primary" name="submit" value="検索">
+
+        <!-- 仕事 -->
+        <!--ボタンのグループ化-->
+
+        <div class="my-3 col-auto flex-grow-1">
+            <div class="mb-3 p-3 bg-light shadow-sm rounded">
+                <p>
+                    都道府県から探す<br>
+                    <br>北海道・東北地方<br>
+                    <a href="#">・北海道</a>
+                    <a href="#">・青森県</a>
+                    <a href="#">・岩手県</a>
+                    <a href="#">・宮城県</a>
+                    <a href="#">・秋田県</a>
+                    <a href="#">・山形県</a>
+                    <a href="#">・福島県</a><br>
+                    <br>関東地方<br>
+                    <a href="#">・茨城県</a>
+                    <a href="#">・栃木県</a>
+                    <a href="#">・群馬県</a>
+                    <a href="#">・埼玉県</a>
+                    <a href="#">・千葉県</a>
+                    <a href="#">・東京都</a>
+                    <a href="#">・神奈川県</a><br>
+                    <br>中部地方<br>
+                    <a href="#">・新潟県</a>
+                    <a href="#">・富山県</a>
+                    <a href="#">・石川県</a>
+                    <a href="#">・福井県</a>
+                    <a href="#">・山梨県</a>
+                    <a href="#">・長野県</a>
+                    <a href="#">・岐阜県</a>
+                    <a href="#">・静岡県</a>
+                    <a href="#">・愛知県</a><br>
+                    <br>近畿地方<br>
+                    <a href="#">・三重県</a>
+                    <a href="#">・滋賀県</a>
+                    <a href="#">・京都府</a>
+                    <a href="#">・大阪府</a>
+                    <a href="#">・兵庫県</a>
+                    <a href="#">・奈良県</a>
+                    <a href="#">・和歌山県</a><br>
+                    中国地方<br>
+                    <a href="#">・鳥取県</a>
+                    <a href="#">・島根県</a>
+                    <a href="#">・岡山県</a>
+                    <a href="#">・広島県</a>
+                    <a href="#">・山口県</a><br>
+                    <br>四国地方<br>
+                    <a href="#">・徳島県</a>
+                    <a href="#">・香川県</a>
+                    <a href="#">・愛媛県</a>
+                    <a href="#">・高知県</a><br>
+                    <br>九州・沖縄地方<br>
+                    <a href="#">・福岡県</a>
+                    <a href="#">・佐賀県</a>
+                    <a href="#">・長崎県</a>
+                    <a href="#">・熊本県</a>
+                    <a href="#">・大分県</a>
+                    <a href="#">・宮崎県</a>
+                    <a href="#">・鹿児島県</a>
+                    <a href="#">・沖縄県</a>
+
+                </p>
+            </div>
+            <div class="mb-3 p-3 bg-light shadow-sm rounded">
+                <p>
+                    人気の職種から探す
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                </p>
+            </div>
+            <div class="mb-3 p-3 bg-light shadow-sm rounded">
+                <p>
+                    仕事内容
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                </p>
+            </div>
+        </div>
+
+    </main>
+    <!-- 広告-->
+    <aside>
+        <div class="m-3 p-3 bg-light shadow-sm rounded">
+            <p>広告</p>
+        </div>
+    </aside>
+
+    <!--フッター-->
+    <footer class="text-white bg-dark">
+        <br />
+        <hr />
+        <div class="m-0 p-2 text-center">
+            <a href="inquiry.html" class="text-white col-auto">お問い合わせ</a>
+            <a href="#" class="text-white col-auto">広告掲載依頼</a>
+            <a href="kiyaku.html" class="text-white col-auto">利用規約</a>
+            <br />
+            <br />
+            <a href="pr.html" class="text-white col-auto">プライバシーポリシー</a>
+        </div>
+        <hr />
+        <div class="pb-2 text-center">
+            <small> Copyright © 2020 Askisst All Rights Reserved. </small>
+        </div>
+    </footer>
+</body>
+
+</html>
+<style>
+    div#contents {
+        width: 100%;
+        background: #FFFFFF;
+        margin: 0px auto;
+    }
+
+    div.jpg {
+        width: 100%;
+        padding: 0px;
+        margin: 0px auto 0px auto;
+        border-bottom: solid 1px #d8d8d8;
+        background: url() repeat-x;
+        background-origin: content-box;
+    }
+
+    /* div.slide_img {
+            width: 100%;
+            padding: 0px;
+            margin: 0px auto 0px auto;
+        } */
+
+    .slick-slide {
+        margin: 0px 5px;
+        height: 514px;
+    }
+
+    @media screen and (max-width: 780px) {
+        /* .slick-slide {
+            height: 257px;
+        } */
+    }
+</style>
