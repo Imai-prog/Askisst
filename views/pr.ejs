@@ -1,34 +1,4 @@
-<!DOCTYPE html>
-<html lang="ja">
-
-<head>
-    <meta charset="UTF-8">
-    <title>プライバシーポリシー</title>
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/template.css">
-    <meta name="viewport" content="width=1214, user-scalable=yes">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-</head>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-    crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-    crossorigin="anonymous"></script>
-
-<body>
-
-    <!--ヘッダー-->
-    <header class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
-        <img src="img/13.png" alt="" class="rounded-circle" style="width: 50px; height: 50px;" />
-        <a href="index.html" class="mr-auto navbar-brand nav-link">
-            <img src="img/Askisst.png" alt="" />
-        </a>
-        <div class="pull-right">
-            <a href="signup.html" class="navbar-brand nav-link"> signup </a>
-            <a href="signin.html" class="navbar-brand nav-link"> signin </a>
-        </div>
-    </header>
+<%- include('./_header') %>
 
     <main class="">
         <!--利用規約-->
@@ -78,23 +48,4 @@
         </div>
     </main>
     <!--フッター-->
-    <footer class="text-white bg-dark">
-        <br />
-        <hr />
-        <div class="m-0 p-2 text-center">
-            <a href="inquiry.html" class="text-white col-auto">お問い合わせ</a>
-            <a href="#" class="text-white col-auto">広告掲載依頼</a>
-            <a href="kiyaku.html" class="text-white col-auto">利用規約</a>
-            <br />
-            <br />
-            <a href="pr.html" class="text-white col-auto">プライバシーポリシー</a>
-        </div>
-        <hr />
-        <div class="pb-2 text-center">
-            <small> Copyright © 2020 Askisst All Rights Reserved. </small>
-        </div>
-    </footer>
-
-</body>
-
-</html>
+    <%- include('./_footer') %>

@@ -1,18 +1,4 @@
-<!DOCTYPE html>
-<html lang="ja">
-
-<head>
-    <meta charset="UTF-8" />
-    <title>ログイン画面</title>
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <meta name="viewport" content="width=1214, user-scalable=yes">
-    <link rel="stylesheet" href="css/slick.css" type="text/css">
-    <link rel="stylesheet" href="css/slick-theme.css" type="text/css">
-    <link rel="stylesheet" href="css/template.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script type="text/javascript" src="js/slick.min.js"></script>
-
-    <!--フォームの入力チェック-->
+<%- include('./_header') %>
     <script>
         function check() {
             var p = new RegExp("^[0-9a-zA-Z_\.-]+@[0-9a-zA-Z_\.-]+\.[a-zA-Z]+$", "i"); /* メールアドレス */
@@ -48,20 +34,8 @@
             return res;
         }
     </script>
-</head>
 
-<body>
-    <!--ヘッダー-->
-    <header class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
-        <img src="img/13.png" alt="" class="rounded-circle" style="width: 50px; height: 50px;" />
-        <a href="index.html" class="mr-auto navbar-brand nav-link">
-            <img src="img/Askisst.png" alt="" />
-        </a>
-        <div class="pull-right">
-            <a href="signup.html" class="navbar-brand nav-link"> signup </a>
-            <a href="signin.html" class="navbar-brand nav-link"> signin </a>
-        </div>
-    </header>
+
 
     <!-- コンテンツ -->
     <main class="">
@@ -95,22 +69,4 @@
     </main>
 
     <!--フッター-->
-    <footer class="text-white bg-dark">
-        <br />
-        <hr />
-        <div class="m-0 p-2 text-center">
-            <a href="inquiry.html" class="text-white col-auto">お問い合わせ</a>
-            <a href="#" class="text-white col-auto">広告掲載依頼</a>
-            <a href="kiyaku.html" class="text-white col-auto">利用規約</a>
-            <br />
-            <br />
-            <a href="pr.html" class="text-white col-auto">プライバシーポリシー</a>
-        </div>
-        <hr />
-        <div class="pb-2 text-center">
-            <small> Copyright © 2020 Askisst All Rights Reserved. </small>
-        </div>
-    </footer>
-</body>
-
-</html>
+    <%- include('./_footer') %>
