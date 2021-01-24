@@ -1,5 +1,6 @@
+//パッケージの読み込み
 const express = require('express');
-const mysql = require('mysql')
+const mysql = require('mysql');
 
 const app = express();
 
@@ -9,6 +10,10 @@ app.get('/', (req, res) => {
     res.render('index.ejs');
 });
 
+app.get('/ask', (req, res) => {
+    res.render('ask.ejs');
+})
+
 app.get('/signup', (req, res) => {
     res.render('signup.ejs');
 });
@@ -16,6 +21,10 @@ app.get('/signup', (req, res) => {
 
 app.get('/signin', (req, res) => {
     res.render('signin.ejs');
+});
+
+app.post('/signin', (req, res) => {
+
 });
 
 app.get('/inquiry', (req, res) => {

@@ -44,11 +44,11 @@
             <h1>ログイン</h1>
             <p>会員情報を入力してください</p>
             <!--会員情報入力-->
-            <form name="myform" action="signin.html" onsubmit="return check()">
+            <form name="myform" action="/signin" method="POST" onsubmit="return check()">
                 <div class="form-row justify-content-center m-2">
                     <div class="col-10">
                         <label class="float-left">メールアドレス</label>
-                        <input type="mail" class="form-control" name="address" placeholder="example@.com">
+                        <input type="mail" class="form-control" name="email" placeholder="example@.com">
                     </div>
                 </div>
                 <br>
@@ -56,13 +56,13 @@
                 <div class="form-row justify-content-center m-2">
                     <div class="col-10">
                         <label class="float-left">パスワード</label>
-                        <input type="password" class="form-control" name="pass" placeholder="パスワードを入力して下さい。">
+                        <input type="password" class="form-control" name="password" placeholder="パスワードを入力して下さい。">
                     </div>
                 </div>
 
                 <br>
                 <div class="col text-center m-3">
-                    <button type="submit" class="btn btn-primary">決定</button>
+                    <button type="submit" class="btn btn-primary">ログイン</button>
                 </div>
             </form>
         </div>
