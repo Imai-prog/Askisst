@@ -1,13 +1,19 @@
 //パッケージの読み込み
 const express = require('express');
 const mysql = require('mysql');
+const session = require('express-session');
 
 const app = express();
 
 app.use(express.static('public'));  //静的ファイル(public)の読み込み
 
+
 app.get('/', (req, res) => {
     res.render('index.ejs');
+});
+
+app.get('/job', (req, res) => {
+    res.render('job.ejs');
 });
 
 app.get('/ask', (req, res) => {
@@ -24,7 +30,22 @@ app.get('/signin', (req, res) => {
 });
 
 app.post('/signin', (req, res) => {
-
+    const email = req.body.email;
+    connection.query(
+        'SELECT * FROM users WHERE email = ?',
+        [email],
+        (error, results) => {
+            if (results.length > 0) {
+                if (req.body.password === results[0].password) {
+                    console.log('認証に成功しました');
+                    res.redirect('/');
+                } else {
+                    console.log('認証に失敗しました');
+                    res.redirect('/signin');
+                }
+            }
+        }
+    )
 });
 
 app.get('/inquiry', (req, res) => {
