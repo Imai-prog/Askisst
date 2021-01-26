@@ -20,7 +20,7 @@
 
     <!-- コンテンツ -->
     <main class="">
-        <button href="/job" type="button" class="col-12 btn btn-outline-danger font-weight-bold">すべての仕事を見る</button><br>
+        <button href="/job" type="button" class="col-12 btn btn-danger font-weight-bold">すべての仕事を見る</button><br>
         <!--エリア選択ボタン-->
         <select name="prefecture" id="pref" class="m-5 p-2 btn btn-info">
             <option value="" selected>エリアを選択</option>
@@ -148,63 +148,76 @@
 
         <div class="my-3 col-auto flex-grow-1">
             <div class="mb-3 p-3 bg-light shadow-sm rounded">
-                <p>
-                    都道府県から探す<br>
-                    <br>北海道・東北地方<br>
-                    <a href="#" class="p-1">・北海道</a>
-                    <a href="#">・青森県</a>
-                    <a href="#">・岩手県</a>
-                    <a href="#">・宮城県</a>
-                    <a href="#">・秋田県</a>
-                    <a href="#">・山形県</a>
-                    <a href="#">・福島県</a><br>
-                    <br>関東地方<br>
-                    <a href="#">・茨城県</a>
-                    <a href="#">・栃木県</a>
-                    <a href="#">・群馬県</a>
-                    <a href="#">・埼玉県</a>
-                    <a href="#">・千葉県</a>
-                    <a href="#">・東京都</a>
-                    <a href="#">・神奈川県</a><br>
-                    <br>中部地方<br>
-                    <a href="#">・新潟県</a>
-                    <a href="#">・富山県</a>
-                    <a href="#">・石川県</a>
-                    <a href="#">・福井県</a>
-                    <a href="#">・山梨県</a>
-                    <a href="#">・長野県</a>
-                    <a href="#">・岐阜県</a>
-                    <a href="#">・静岡県</a>
-                    <a href="#">・愛知県</a><br>
-                    <br>近畿地方<br>
-                    <a href="#">・三重県</a>
-                    <a href="#">・滋賀県</a>
-                    <a href="#">・京都府</a>
-                    <a href="#">・大阪府</a>
-                    <a href="#">・兵庫県</a>
-                    <a href="#">・奈良県</a>
-                    <a href="#">・和歌山県</a><br>
-                    <br>中国地方<br>
-                    <a href="#">・鳥取県</a>
-                    <a href="#">・島根県</a>
-                    <a href="#">・岡山県</a>
-                    <a href="#">・広島県</a>
-                    <a href="#">・山口県</a><br>
-                    <br>四国地方<br>
-                    <a href="#">・徳島県</a>
-                    <a href="#">・香川県</a>
-                    <a href="#">・愛媛県</a>
-                    <a href="#">・高知県</a><br>
-                    <br>九州・沖縄地方<br>
-                    <a href="#">・福岡県</a>
-                    <a href="#">・佐賀県</a>
-                    <a href="#">・長崎県</a>
-                    <a href="#">・熊本県</a>
-                    <a href="#">・大分県</a>
-                    <a href="#">・宮崎県</a>
-                    <a href="#">・鹿児島県</a>
-                    <a href="#">・沖縄県</a>
-
+                <p class="d-flex flex-column">
+                    <a class="font-weight-bold">都道府県から探す</a>
+                <div class="col-12 d-flex flex-row alert alert-danger">
+                    <a class="d-flex align-items-center font-weight-bold mr-3">北海道・東北地方</a>
+                    <button href="#" class="btn btn-outline-danger mr-1">北海道</button>
+                    <button href="#" class="btn btn-outline-danger mr-1">青森</button>
+                    <button href="#" class="btn btn-outline-danger mr-1">岩手</button>
+                    <button href="#" class="btn btn-outline-danger mr-1">宮城</button>
+                    <button href="#" class="btn btn-outline-danger mr-1">秋田</button>
+                    <button href="#" class="btn btn-outline-danger mr-1">山形</button>
+                    <button href="#" class="btn btn-outline-danger mr-1">福島</button>
+                </div>
+                <div class="row-12 d-flex flex-row alert alert-warning">
+                    <a class="d-flex align-items-center font-weight-bold mr-3">関東地方</a>
+                    <button href="#" class="btn btn-outline-warning mr-1">茨城</button>
+                    <button href="#" class="btn btn-outline-warning mr-1">栃木</button>
+                    <button href="#" class="btn btn-outline-warning mr-1">群馬</button>
+                    <button href="#" class="btn btn-outline-warning mr-1">埼玉</button>
+                    <button href="#" class="btn btn-outline-warning mr-1">千葉</button>
+                    <button href="#" class="btn btn-outline-warning mr-1">東京</button>
+                    <button href="#" class="btn btn-outline-warning mr-1">神奈川</button>
+                </div>
+                <div class="col-12 d-flex flex-row alert alert-success">
+                    <a class="d-flex align-items-center font-weight-bold mr-3">中部地方</a>
+                    <button href="#" class="btn btn-outline-success mr-1">新潟</button>
+                    <button href="#" class="btn btn-outline-success mr-1">富山</button>
+                    <button href="#" class="btn btn-outline-success mr-1">石川</button>
+                    <button href="#" class="btn btn-outline-success mr-1">福井</button>
+                    <button href="#" class="btn btn-outline-success mr-1">山梨</button>
+                    <button href="#" class="btn btn-outline-success mr-1">長野</button>
+                    <button href="#" class="btn btn-outline-success mr-1">岐阜</button>
+                    <button href="#" class="btn btn-outline-success mr-1">静岡</button>
+                    <button href="#" class="btn btn-outline-success mr-1">愛知</button>
+                </div>
+                <div class="row-12 d-flex flex-row alert alert-info">
+                    <a class="d-flex align-items-center font-weight-bold mr-3">近畿地方</a>
+                    <button href="#" class="btn btn-outline-info mr-1">三重</button>
+                    <button href="#" class="btn btn-outline-info mr-1">滋賀</button>
+                    <button href="#" class="btn btn-outline-info mr-1">京都</button>
+                    <button href="#" class="btn btn-outline-info mr-1">大阪</button>
+                    <button href="#" class="btn btn-outline-info mr-1">兵庫</button>
+                    <button href="#" class="btn btn-outline-info mr-1">奈良</button>
+                    <button href="#" class="btn btn-outline-info mr-1">和歌山</button>
+                </div>
+                <div class="row-12 d-flex flex-row alert alert-primary">
+                    <a class="d-flex align-items-center font-weight-bold mr-3">中国地方</a>
+                    <button href="#" class="btn btn-outline-primary mr-1">鳥取</button>
+                    <button href="#" class="btn btn-outline-primary mr-1">島根</button>
+                    <button href="#" class="btn btn-outline-primary mr-1">岡山</button>
+                    <button href="#" class="btn btn-outline-primary mr-1">広島</button>
+                    <button href="#" class="btn btn-outline-primary mr-1">山口</button>
+                </div>
+                <div class="row-12 d-flex flex-row alert alert-secondary">
+                    <a class="d-flex align-items-center font-weight-bold mr-3">四国地方</a>
+                    <button href="#" class="btn btn-outline-secondary mr-1">徳島</button>
+                    <button href="#" class="btn btn-outline-secondary mr-1">香川</button>
+                    <button href="#" class="btn btn-outline-secondary mr-1">愛媛</button>
+                    <button href="#" class="btn btn-outline-secondary mr-1">高知</button>
+                </div>
+                <div class="row-12 d-flex flex-row alert alert-dark">
+                    <a class="d-flex align-items-center font-weight-bold mr-3">九州・沖縄地方</a>
+                    <button href="#" class="btn btn-outline-dark mr-1">福岡</button>
+                    <button href="#" class="btn btn-outline-dark mr-1">佐賀</button>
+                    <button href="#" class="btn btn-outline-dark mr-1">長崎</button>
+                    <button href="#" class="btn btn-outline-dark mr-1">熊本</button>
+                    <button href="#" class="btn btn-outline-dark mr-1">大分</button>
+                    <button href="#" class="btn btn-outline-dark mr-1">宮崎</button>
+                    <button href="#" class="btn btn-outline-dark mr-1">鹿児島</button>
+                    <button href="#" class="btn btn-outline-dark mr-1">沖縄</button>
+                </div>
                 </p>
             </div>
             <div class="mb-3 p-3 bg-light shadow-sm rounded">
@@ -224,7 +237,7 @@
             </div>
             <div class="mb-3 p-3 bg-light shadow-sm rounded">
                 <p>
-                    仕事内容<br>
+                    仕事内容から探す<br>
                     <a href="#" class="p-2">▪ 清掃</a>
                     <a href="#" class="p-2">▪ 家事代行</a><br>
                     <a href="#" class="p-2">▪ 引越し</a>
